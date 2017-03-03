@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text</title>
+  <link rel="stylesheet" type="text/css" href="CSS/css2.css">
+	<script type="text/javascript"
+	src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+	<script type="text/javascript">
+	swfobject.embedSWF("flash/bird.swf","bird", "400", "300", "8.0.0");</script>
+	<script type="text/javascript">
+	var flashvars = {};
+	var params = {movie:"video/puppy.flv"};
+	swfobject.embedSWF("flash/osplayer.swf","snow", "400", "320", "8.0.0",flashvars, params);</script>
+	<script type="text/javascript">
+	var flashvars = {};
+	var params = {mp3: "audio/test-audio.mp3"};
+	swfobject.embedSWF("flash/player_mp3_1.0.0.swf","music-player", "200", "20", "8.0.0",flashvars, params);</script>
+</head>
+<body>
+   <div id="body">
+
+   	 <h1 id="top"><ins>1<sup>st</sup> Desarrollo Web</ins></h1>
+
+   	 <ul>
+   	 	<li><a href="#texto">Elementos de texto</a></li>
+   	 	<li><a href="#listado">Elementos de listado</a></li>
+   	 	<li><a href="#enlace">Elementos de enlace (Link)</a></li>
+   	 	<li><a href="#imagen">Colocar imagen</a></li>
+   	 	<li><a href="#tablas">Elementos de tablas</a></li>
+   	 	<li><a href="#formas">Elementos de formas</a></li>
+   	 	<li><a href="#extra">Extra Markup</a></li>
+   	 	<li><a href="#flash">Flash, video y audio</a></li>
+   	 </ul>
+
+   	 <hr />
+
+   	 <div>
+
+   	 	<h2>2<sup><ins>nd</ins></sup> Inicio</h2>
+
+   	 	<p>Esta pagina esta orientada al area educativa de HTML, de esta manera se puede retomar el uso de diferentes elementos o <q>tags</q> que ayudan al desarrollo de un sitio web</p>
+         
+        <h2 id="texto"><ins>Elementos de Texto</ins></h2>
+
+   	 	<p>Se utilizaran diferentes elementos como:</p>
+
+   	 	<ul>
+   	 		<li>Encabezados (h1-h6) <h2>Ejemplo</h2></li>
+   	 		<li>Parrafos(p) <p>Ejemplo</p></li>
+   	 		<li>Negritas(b) <b>Ejemplo</b></li>
+   	 		<li>Italic(i) <i>Ejemplo</i></li>
+   	 		<li>Exponente(sup) Ejemplo<sup>Ejemplo</sup></li>
+   	 		<li>Sub(sub) Ejemplo<sub>Ejemplo</sub></li>
+   	 		<li>Salto de linea(br) <br /> Ejemplo</li>
+   	 		<li>Linea horizontal(hr/) <hr /> Ejemplo</li>
+   	 	</ul>
+
+   	 	<p>Existen varios editores visuales los cuales utilizan diferentes <strong>elementos de texto</strong> para interpretar lo escrito en la pagina web y asi hacer una conversion mas clara para el lector.</p>
+
+   	 	<p>Para esto existen elementos de texto extra tales como:</p>
+
+   	 	<ul>
+   	 		<li>Enfasis(em) <em>Ejemplo</em></li>
+   	 		<li>Negritas(strong) <strong>Ejemplo</strong></li>
+   	 		<li>Entre comillas (q) <q>Ejemplo</q></li>
+   	 		<li>Cita centrada(blockquote) <blockquote>Ejemplo</blockquote></li>
+   	 		<li>Abreviacion(abbr) <abbr title="Ejemplo">Ejem</abbr> <-(cursor en Ejem)</li>
+   	 		<li>Cita (cite) <cite>Ejemplo</cite></li>
+   	 		<li>Instancia de definicion (dfn) <p><dfn>Ejemplo</dfn> caso o muestra para demostrar una hipotesis o aseveracion</p></li>
+   	 		<li>Direccion(address) <address>Ejemplo</address></li>
+   	 		<li>Insertar(ins) <ins>Ejemplo</ins></li>
+   	 		<li>Eliminar(del) <del>Ejemplo</del></li>
+   	 		<li>Tachar (s) <s>Ejemplo</s></li>
+   	 	</ul>
+
+
+   	 </div>
+
+   	 <hr />
+
+   	 <div>
+   	 	
+   	 	<h2 id="listado"><ins>Elementos de Listado</ins></h2>
+
+   	 	<p>Los elementos de listado son aquellos que se encargan de ordenar de cierta manera datos que uno quiere expresar. Estos datos pueden ser listados de manera ordenada (Numerada), desordenada (Puntos) o listado de definicion. A continuacion se va a describir cada uno de ellos:</p>
+
+   	 	<p><strong>Listado ordenado (ol-/ol) -> order list</strong>, luego de colocar ol de entrada hay que empezar a listar los datos y eso se hace con (li-/li) </p>
+
+   	 	 <ol>
+   	 	  <li>Comprar material
+   	 	  	<ul>
+   	 	  	<li>Atornillador</li>
+   	 	  	<li>Clavos</li>
+   	 	  	<li>Martillo</li>
+   	 	  	<li>etc..</li>
+   	 	  	</ul>
+   	 	  </li>
+   	 	  <p><b>Tambien se pueden hacer sublistados, haciendo lo mismo de antes pero dentro de un elemento (li) de la lista</b></p> 
+   	 	  <li>Ordenar materiales
+   	 	  </li>
+   	 	  <li>Unir piezas</li>
+   	 	  <li>Implementar</li>
+   	 	 </ol>
+
+   	 	<p><strong>Listado desordenado (ul-/ul) 0--> unorder list</strong></p>
+
+   	 	 <ul>
+   	 	 	<li>x2 Harina</li>
+   	 	 	<li>x10 Huevo</li>
+   	 	 	<li>x2 Leche</li>
+   	 	 </ul>
+
+   	 	<p><strong>Listado de definicion (dl-/dl)</strong> Este listado es algo diferente, ya no se usa li, sino dt (termino a definir) y dentro de dt se usa dd (definicion) </p>
+
+   	 	<dl>
+   	 		<dt>Ejemplo
+   	 			<dd>
+   	 				Un ejemplo sirve para explicar o ilustrar una afirmación general, o para proporcionar un caso particular que hace de modelo para el caso general. El ejemplo es escogido libremente, pero busca aclarar la comprensión de un fenómeno o proceso dado.
+   	 			</dd>
+   	 		</dt>
+   	 	</dl>
+
+
+   	 </div>
+
+   	 <hr />
+
+   	 <div>
+   	 	
+   	 	<h2 id="enlace"><ins>Elementos de enlace (link)</ins> </h2>
+
+   	 	<p>Para empezar a colocar textos con un enlace, primero hay que empezar con el tag (a - /a) el cual hace clickleable una frase, luego dentro del primer tag de (a) hay que colocar <b>href="direccion que tu quieras"</b>, despues de esto tu frase al clickearla va a redireccionar a la persona a ese enlace. <br/>Por ejemplo:</p>
+
+   	 	<a href="Html.html">Ejemplo</a>
+
+   	 	<p><strong>Puedes combinar esto con todo lo anterior, por ejemplo listar datos que redireccionen a diferentes paginas.</strong></p>
+        <ul>
+           <li><b>Misma carpeta:</b> a href="file.html">archivo/a </li>
+           <li><b>hijo:</b> a href="carpeta/file.html">archivo/a </li>
+           <li><b>Nieto:</b> a href="carpeta1/carpeta2/file.html">archivo/a </li>
+           <li><b>De hijo a padre:</b> a href="../index.html">archivo/a </li>
+           <li><b>De nieto a abuelo:</b> a href="../../index.html">archivo/a</li>
+        </ul>
+
+        <p>Con <b>href:"mailto:earayad@hotmail.cl"</b> se crea un link que empieza la escritura de un correo hacia el link</p>
+        <p>Si quieres un link que abra otra ventana puedes usar <b>target</b> por ejemplo:
+           <b>href="Html.html" target="_blank"</b> el valor de target deberia de ser _blank <a href="Html.html" target="_blank">Otra ventana</a>
+        </p>
+
+        <p>Tambien se pueden hacer redirecciones dentro de la misma pagina asigandole una id a algun elemento dentro de esta, por ejemplo se le asigno como id ="top" al h1 del comienzo : <a href="#top">1<sup><ins>st</ins></sup> Desarrollo web</a></p>
+
+   	 </div>
+
+   	 <hr />
+
+   	 <div>
+
+   	 <h2 id="imagen"><ins>Colocar imagenes</ins></h2>
+
+   	 <p>Para empezar a colocar imagenes primero tenemos que utilizar el elemento <strong>(img /)</strong> el cual es un elemento vacio (significa que es un unico tag sin salida). Dentro de img existe el atributo <strong>src (source)</strong> el cual debe tener la fuente o direccion de la imagen (en este caso src="imagenes/imagen1.png"), tambien esta el atributo <b>(alt)</b> el cual provee una descripcion de la imagen si es que esta no carga y por ultimo esta <b>(title)</b> en el cual se provee informacion adicional sobre la imagen cuando se pone el cursor sobre esta.</p>
+
+     <img src="imagenes/imagen1.png" alt="Imagen de html" title="Html image" />
+
+     <p><b>A las imagenes tambien se le puede cambiar el tamano y esto se hace con height y width, por ejemplo: height="400" width="400"</b></p>
+
+     <img src="imagenes/imagen1.png" height="400" width="400">
+
+     <p><b>Ahora, va a existir el caso en que vamos a querer colocar imagenes junto con el texto, pero si lo ponemos asi nomas el texto va a quedar corrido y feo, por eso existe el atributo <strong>align</strong> el cual va a alinear nuestra imagen ya sea a la derecha (align="right") o a la izquierda(align="left") junto con el texto, por ejemplo:</b></p>
+
+     <p><img src="imagenes/imagen1.png" height="300" width="300" align="left">HyperText Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS), and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.[1] Web browsers receive HTML documents from a webserver or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+
+	HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as <img /> and <input /> introduce content into the page directly. Others such as <p>...</p> surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the page.
+
+	HTML can embed programs written in a scripting language such as JavaScript which affect the behavior and content of web pages. Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), maintainer of both the HTML and the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.[2]</p>
+
+	 <p><img src="imagenes/imagen1.png" height="300" width="300" align="right">HyperText Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS), and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.[1] Web browsers receive HTML documents from a webserver or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+
+	HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as <img /> and <input /> introduce content into the page directly. Others such as <p>...</p> surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the page.
+
+	HTML can embed programs written in a scripting language such as JavaScript which affect the behavior and content of web pages. Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), maintainer of both the HTML and the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.[2]</p>
+    
+    <p>Ademas de right y left la imagen puede ser alineada de manera vertical con los atributos <b>top</b>, <b>middle</b> y <b>bottom</b>, en el caso de poner (img) al comienzo del parrafo, ejemplo:
+  	<ul>
+  		<li><q>top</q> coloca la primera linea en la cerca de la cima de la imagen </li>
+  		<li><q>middle</q> coloca la primera linea cerca del medio de la imagen</li>
+  		<li><q>bottom</q> coloca la primera linea cerca del pie de la imagen</li>
+  	</ul>
+    </p>
+
+    <p>HTML 5 anadio el atributo <b>(figure)</b> el cual funciona como un div de imagenes, este ayuda a estableces una estructura a la imagen, por ejemplo: (Aquellos browsers que no entienden HTML5 solo ignoran estos elementos)</p>
+
+    <p>Hay un elemento llamado <strong>(figcaption-/figcaption)</strong> el cual se encarga de agregarle un una descripcion en el pie de la foto (todo esto dentro de <strong>figure</strong>).</p>
+
+    <figure>
+    <img src="imagenes/imagen1.png" height="300" width="300">
+    	<figcaption>
+    		Imagen 1. Html no es un lenguaje de programacion
+    	</figcaption>
+    </figure>
+    </div>
+
+    <hr />
+
+    <div>
+    	
+    <h2 id="tablas"><strong>Elementos de tablas</strong></h2>
+
+    <p>La estructura basica de una tabla comienza con el elemento <strong>(table)</strong>, luego dentro de table hay que indicar como rellenar los datos con <strong>(tr) o table row</strong> y por ultimo el ingreso de datos mediante <strong>(td) o table data</strong> donde ingresas el dato que quieres, por ejemplo:</p>
+
+    <table>
+    	<tr>
+    		<td>10</td>
+    		<td>20</td>
+    		<td>30</td>
+    	</tr>
+    	<tr>
+    		<td>40</td>
+    		<td>50</td>
+    		<td>60</td>
+    	</tr>
+    	<tr>
+    		<td>70</td>
+    		<td>80</td>
+    		<td>90</td>
+    	</tr>
+    </table>
+
+    <p>Ademas del elemento <strong>table data (td)</strong> existe otro llamado <strong>table header (th)</strong>, como dice su nombre es el encabezado de una tabla, ademas dentro de <strong>(th)</strong> existe un atributo llamado <strong>"scope"</strong>, el cual es utilizado para indicar si va a ser encabezado de fila o columna <strong>(scope="col" o scope="row")</strong>, por ejemplo:</p>
+
+    <table>
+    	<tr>
+    		<th></th>
+    		<th scope="col">Lunes</th>
+    		<th scope="col">Martes</th>
+    	</tr>
+    	<tr>
+    		<th scope="row">N<sup><ins>ro</ins></sup> de tickets vendidos</th>
+    		<td>120</td>
+    		<td>180</td>
+    	</tr>
+    	<tr>
+    		<th scope="row">Dinero recaudado</th>
+    		<td>$12.000.000</td>
+    		<td>$18.000.000</td>
+    	</tr>
+    </table>
+
+    <p>Dentro de th y td existe un atributo llamado <strong>(colspan)</strong> y <strong>(rowspan)</strong>, el cual se encara de hacer que un dato ocupe mas casillas, ejemplo geografica <strong>colspan="2"</strong>, en gym <strong>colspan="3"</strong> o en movie <strong>rowspan="2"</strong>:</p>
+
+   	<table>
+	<tr>
+	<th></th>
+	<th>9am</th>
+	<th>10am</th>
+	<th>11am</th>
+	<th>12am</th>
+	</tr>
+	<tr>
+	<th>Monday</th>
+	<td colspan="2">Geography</td>
+	<td>Math</td>
+	<td>Art</td>
+	</tr>
+	<tr>
+	<th>Tuesday</th>
+	<td colspan="3">Gym</td>
+	<td>Home Ec</td>
+	</tr>
+	</table>
+
+	<table>
+	<tr>
+	<th></th>
+	<th>ABC</th>
+	<th>BBC</th>
+	<th>CNN</th>
+	</tr>
+	<tr>
+	<th>6pm - 7pm</th>
+	<td rowspan="2">Movie</td>
+	<td>Comedy</td>
+	<td>News</td>
+	</tr>
+	<tr>
+	<th>7pm - 8pm</th>
+	<td>Sport</td>
+	<td>Current Affairs</td>
+	</tr>
+	</table>
+
+	<p>Dentro de table existen otros atributos que sirve para darle una mayor estructura a la tabla, como <strong>(thead)</strong>, <strong>(tbody)</strong> y <strong>(tfoot)</strong>. Esto ayuda a estilizar de una manera mas dinamica las tablas a la hora de usar CSS</p>
+
+	<table>
+	<thead>
+	<tr>
+	<th>Date</th>
+	<th>Income</th>
+	<th>Expenditure</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<th>1st January</th>
+	<td>250</td>
+	<td>36</td>
+	</tr>
+	<tr>
+	<th>2nd January</th>
+	<td>285</td>
+	<td>48</td>
+	</tr>
+<!-- additional rows as above -->
+	<tr>
+	<th>31st January</th>
+	<td>129</td>
+	<td>64</td>
+	</tr>
+	</tbody>
+	<tfoot>
+	<tr>
+	<td></td>
+	<td>7824</td>
+	<td>1241</td>
+	</tr>
+	</tfoot>
+	</table>
+
+
+	<p>Tambien existen otros atributos para darle estilo a la tabla, lo cual ya es obsoleto en html ya que eso se utiliza en CSS, pero igual se va a mostrar.</p>
+	<p>Los atributos son <strong>width, cellpadding y cellspacing</strong>. Si width es ubicado en el table, se va a modificar el ancho de la tabla completa y si es colocado en algun <strong>th o td</strong>, va a cambiar el ancho de un bloque es especifico, lo mismo con los valores de <strong>cellpadding</strong>, el cual se encarga de anadir espacio dentro de cada celda de la tabla y por ultimo <strong>cellspacing</strong> anade espacio entre cada bloque de la tabla.</p>
+
+	<table width="400" cellpadding="10" cellspacing="5">
+	<tr>
+	<th width="150"></th>
+	<th>Withdrawn</th>
+	<th>Credit</th>
+	<th width="150">Balance</th>
+	</tr>
+	<tr>
+	<th>January</th>
+	<td>250.00</td>
+	<td>660.50</td>
+	<td>410.50</td>
+	</tr>
+	<tr>
+	<th>February</th>
+	<td>135.55</td>
+	<td>895.20</td>
+	<td>1170.15</td>
+	</tr>
+	</table>
+
+	<table>
+		<tr>
+			<th></th>
+			<th>Lunes</th>
+			<th>Martes</th>
+			<th>Miercoles</th>
+			<th>Jueves</th>
+			<th>Viernes</th>
+		</tr>
+		<tr>
+			
+		</tr>
+	</table>
+	<p>Ademas de anadir espacios, tambien se le puede agregar color y bordes con los atributos de <strong>border="numero" y bgcolor="color o hex"</strong>, <strong>bgcolor o background color</strong> es utilizado para darle color al fondo de cada bloque de la tabla o de la tabla completa, los colores por lo general son colocados en hexadecimal.</p>
+
+	<table border="2" bgcolor="#efefef">
+	<tr>
+	<th width="150"></th>
+	<th>Withdrawn</th>
+	<th>Credit</th>
+	<th width="150" bgcolor="#cccccc">Balance</th>
+	</tr>
+	<tr>
+	<th>January</th>
+	<td>250.00</td>
+	<td>660.50</td>
+	<td bgcolor="#cccccc">410.50</td>
+	</tr>
+	<tr>
+	<th>February</th>
+	<td>135.55</td>
+	<td>895.20</td>
+	<td bgcolor="#cccccc">1170.15</td>
+	</tr>
+	</table>
+
+    </div>
+
+    <hr />
+
+    <div>
+    	
+    <h2 id="formas"><strong><ins>Elementos de formas</ins></strong></h2>
+
+    <p>Todo elemento de forma comienza con el elemento <strong>(form)</strong>, donde siempre deberia de contener al atributo <strong>(action)</strong>, el cual contiene la url de la pagina de la cual el servidor recibe la informacion cuando esta es entregada, tambien existe el atributo <strong>(method)</strong>, que puede contener 2 valores, <strong>get</strong> o <strong>post</strong>.</p>
+
+    <p>El <strong>get method</strong>, es anadido despues de haber tipificado ya el atributo <strong>action="url"</strong></p>
+
+    <p>El <strong>get method</strong>, es ideal para: <br/>
+    -formas cortas, tales como las cajas de busqueda (search boxes)
+    -Cuando estas recuperando data del servidor (No enviando informacion que deberia ser anadida o eliminada de la base de datos)
+    </p>
+
+    <p>Con el <strong>post method</strong>, los valores son enviados en lo que se conoce como HTTP header. Se deberia de usar el <strong>post method</strong>, si la forma:<br />
+    -Permite a los usuarios enviar archivos
+    -Es muy largo
+    -Contiene datos sensibles (contrasenas)
+    -Anade o elimina informacion de una base de datos
+    </p>
+
+    <p>Si el atributo <strong>method</strong>, no es anadido quedara por default como <strong>method="get"</strong></p>
+
+    <p>Hay un atributo en casi todos los elementos el cual es <strong>id</strong>, que sirve para darle un valor de identificacion a un elemento en especifico, por ejemplo: <strong>id="formas"</strong></p>
+
+    <p>Existe tambien el atributo size el cual no deberia ser utilizado en las nuevas <strong>formas</strong>, pero en las antiguas se utilizaba para darle un ancho al texto de entrada (el tamano de la search box por ejemplo)</p>
+
+    <p>Por otra parte esta el elemento <strong>(input) <q>un elemento vacio</q></strong>, que va dentro del elemento <strong>(form)</strong>, que es usado para crear varias <strong>formas de control</strong>, y el valor del atributo <strong>type</strong> que va en el elemento <strong>(input)</strong>, va a indicar que tipo de <strong>forma</strong> va a ser, por ejemplo: (p)Username:(input type="text" name="username" size="15" maxlength="30" /)(p) (forma tipo text, nombre de la forma username, tamanho de la forma 15 y maximo de caracteres 30)</p>
+
+    <form action="http://www.example.com/login.php">
+		<p>Username:
+		<input type="text" name="username" size="15"
+		maxlength="30" />
+		</p>
+	</form>
+
+	<p>Cuando un usuario entrega informacion en el <strong>form</strong>, el servidor necesita saber cual <strong>forma</strong> fue utilizada para cada tipo de ingreso de dato, (por ejemplo en un login el servidor necesita saber que casilla se utilizo como nombre de usuario y cual se uso como contrasena). Por eso cada <strong>forma de control</strong>, requiere un nombre. Este nombre identifica a la <strong>forma</strong> y le indica al servidor de que <strong>forma</strong> fue enviada la data</p>
+
+	<p>En el elementro <strong>input</strong> en el atributo <strong>type</strong> existen otros tipos de <strong>formas</strong>, como el <strong>password</strong>, el cual se encarga de camuflar todo lo escrito en la casilla como "puntos", por ejemplo:</p>
+
+	<form action="http://www.example.com/login.php">
+	<p>Username:
+	<input type="text" name="username" size="15"
+	maxlength="30" />
+	</p>
+	<p>Password:
+	<input type="password" name="password" size="15"
+	maxlength="30" />
+	</p>
+	</form>
+
+	<p>Dentro de el elemento <strong>form</strong>, esta el elementro <strong>(textarea-/textarea)</strong>, el cual abre un recuado en el cual puedes escribir texto libremente. Ese recuadro puede ser modificado, para hacerlo mas grande o mas largo, con los atributos <strong>cols y rows</strong>, dentro de <strong>(textarea)</strong></p>
+
+	<form action="http://www.example.com/comments.php">
+	<p>What did you think of this gig?</p>
+	<textarea name="comments" cols="30" rows="4">Enter your comments...</textarea>
+	</form>
+
+	<p>En <strong>type</strong>, tambien existen las formas <strong>radio y checkbox</strong>, a los cuales hay que darle un valor con el atributo <strong>value</strong> para que el server sepa el valor (value es para que el server identifique el dato, pero para que sea mostrado en pantalla hay que escribir el dato fuera del cierre del input ejemplo: <strong>input type="radio" name="genre" value="rock"
+	checked="checked" /> Rock</strong>), y si se quiere dejar un dato checkeado por default hay que utilizar el atributo <strong>checked="checked"</strong>, por ejemplo:</p>
+
+	<form action="genero.php">
+	<p>Elija el tipo de genero (radio)</p>
+	<input type="radio" name="genero" value="rock" checked="checked" />Rock
+	<input type="radio" name="genero" value="metal" />Metal
+	<input type="radio" name="genero" value="punk" />Punk
+	</form>
+
+	<form action="app.php">
+	<p>Elija su aplicacion favorita (checkbox)</p>
+	<input type="checkbox" name="app" value="spotify" checked="checked" />Spotify
+	<input type="checkbox" name="app" value="imusic"/>Imusic
+	<input type="checkbox" name="app" value="claromusica"/>ClaroMusica
+		
+	</form>
+	
+
+	<p>Ademas de <strong>input</strong> hay otro elemento que puede tomar su lugar, el elemento <strong>(select-/select)</strong>, el cual libera una lista de datos que pueden ser seleccionados. Dentro del elemento <strong>select</strong>, existe el elemento <strong>(option-/option)</strong>, el cual contiene el atributo <strong>value</strong> para que el server lo identifique y para que sea mostrado en pantalla hay que poner el nombre de la opcion entre el tag de entrada y el de salida del <strong>option</strong> tag, el atributo <strong>selected</strong> funciona igual que el <strong>checked</strong> del checkbox o radio (inspeccionar elemento para mas informacion).<strong>En palabras mas cortas, select es la lista y cada option dentro de select representa un dato de la lista</strong></p>
+
+	<form action="app.php">
+	<p>Elija una aplicacion:</p>
+	<select name="apps">
+		<option  value="spotify">Spotify</option>
+		<option  value="imusic">Imusic</option>
+		<option  value="claromusica" selected="selected">ClaroMusica</option>
+	</select>
+	</form>
+
+	<p>En el elemento <strong>(select)</strong> hay otros 2 atributos, el atributo <strong>size</strong> que aumenta la cantidad de datos visibles antes de desplegar la lista y <strong>multiple="multiple"</strong>, que permite la seleccion multiple de datos en la lista, por ejemplo : selecta name="generos" multiple="multiple" size="3"</p>
+
+	<form action="genero.php">
+	 <select name="generos" multiple="multiple" size="3">
+	 <option value="rock">Rock</option>
+	 <option value="metal">Metal</option>
+	 <option value="punk">Punk</option>
+	 </select>
+	</form>
+		
+	<p>Existe otro tipo de <strong>forma</strong> llamado <strong>(file) type="file"</strong>, el cual se encarga de cargar un archivo y tambien esta <strong>type="submit"</strong>, el cual corresponde a un boton que se encarga de gatillar la accion de enviar el dato cargado a la pagina especificada en <strong>action</strong> de <strong>form</strong> (en este caso el boton toma el nombre que le ponga en value="upload"), por ejemplo:</p>
+
+	<form action="dato.php" method="post">
+	  	<p>Elija algun archivo:</p>
+		<input type="file" name="data"/>
+		<input type="submit" name="sub" value="upload"/>
+	</form>
+
+	<p>Tambien se puede utilizar una imagen como boton <strong>"submit"</strong> con la forma <strong>type="image"</strong>, por ejemplo</p>
+
+	<form action="subscribe.php">
+		<input type="text" name="data"/>
+		<input type="image" src="imagenes/imagen1.png" width="50" height="20">
+	</form>
+
+	<p>Existe el elemento <strong>(button)</strong> en <strong>form</strong>, el cual le da al usuario mas control en como son sus botones y que aparece dentro de este. Tambien existe un tipo de forma llamado <strong>type="hidden"</strong> que es utilizado para hacer algun tipo de control de manera no visible, por ejemplo en este caso al apretar el boton, se entregara el valor tipificado en hidden con el value="lyrics" el cual es tomado por el name="bookmarks":</p>
+
+	<form action="subscribe.php">
+		<button><img src="imagenes/add.png" alt="add" width="10" height="10"/>Add</button>
+		<input type="hidden" name="bookmarks" value="lyrics">
+	</form>
+
+	<p>Antes para anadirle texto a alguna casilla, se creaba el elemento luego de este se escribia, en realidad cada <strong>elemento de control</strong> deberia de tener antes tipificado otro elemento llamado <strong>(label) o etiqueta</strong>, el cual esta disenado exactamente para esto.(colocar algun nombre al lado de un elemento de forma como Edad, genero, hombre, mujer)</p>
+
+	<form action="datos.php">
+		<label>Edad: <input type="text" name="edad"></label>
+		<input type="submit" value="Entregar" /><br />
+		<label>genero:</label>
+		<input id="hombre" type="radio" name="genero" value="h" />
+		<label for="hombre">Hombre</label>
+		<input id="mujer" type="radio" name="genero" value="m" />
+		<label for="mujer">Mujer</label>
+	</form>
+
+	<p>Dentro de <strong>label</strong> existe un atributo llamado <strong>for</strong>, que sirve para asignarle algun texto segun la <strong>id</strong> de algun otro elemento, en el caso de arriba se uso <strong>for</strong> dentro de un label para asigarle el <strong>label</strong> de Hombre y Mujer a los 2 check que hay. Ejemplo:</p>
+
+	<p>
+	&lt;input id="hombre" type="radio" name="genero" value="h" /&gt;<br>
+	&lt;label for="hombre"&gt;Hombre&lt;/label&gt;
+	</p>
+
+	<p>
+		<b>Si se usa el label con el for en los siguientes elementos, el texto deberia de quedar a la izquierda por norma (Se coloca el label antes del input)</b>:
+		<ul>
+			<li>Text inputs</li>
+			<li>Text areas</li>
+			<li>Select boxes</li>
+			<li>File uploads</li>
+		</ul>	
+
+		<b>En los siguientes elementos, el texto deberia de quedar a la derecha (Se coloca el laber despues del input)</b>:
+		<ul>
+			<li>Individual checkboxes</li>
+			<li>Individual radio buttons</li>
+
+		</ul>	
+	</p>
+
+	<p>Se pueden agrupar los elementos de control con el elemento <strong>(fieldset)</strong>, la mayoria de los buscadores muestran los <strong>fieldset</strong> como una linea que recubre a los demas elementos, esta apariencia puede ser ajustada con CSS</p>
+
+	<p>Tambien existe otro elemento llamado <strong>(legend)</strong>, el cual puede ser utilizado directamente despues del <strong>fieldset</strong> para colocarle un titulo al recuadro y asi tener una mayor identificacion de este, como en el siguiente ejemplo:</p>
+
+<form action="informacion.php" method="post">
+	<fieldset>
+		<legend>Informacion del contacto</legend>
+		<label>Nombre:<br/>
+		<input type="text" name="name" required="required"/></label><br/>
+		<label>ApellidoP:<br/>
+		<input type="text" name="apellidop" required="required" /></label><br/>
+		<label>ApellidoM:<br/>
+		<input type="text" name="apellidom" required="required"/></label>
+		<input type="submit" name="entregar" value="Entregar"/>
+	</fieldset>
+</form>
+
+	<p>En HTML5 existe un atributo dentro de input llamado <strong>required="required"</strong>, el cual es utilizado para que alguna casilla o elemento sea indispensable a la hora de entregar (submit) los datos.</p>
+
+	<p>NOTA: En html 5 los atributos no necesita obligatoriamente value, en cambio e HTML4 si</p>
+
+	<p>En HTML5 existe otro tipo de atributo llamado <strong>type="date"</strong></p>
+
+	<form action="http://www.example.com/bookings/"
+	method="post">
+	<label for="username">Departure date:</label>
+	<input type="date" name="depart" />
+	<input type="submit" value="Submit" />
+	</form>
+
+	<p>En HTML5 existe otro tipo de atributo llamado <strong>type="email"</strong> que sirve para validar un email (que contenga @)</p>
+
+	<form action="http://www.example.org/subscribe.php">
+	<p>Please enter your email address:</p>
+	<input type="email" name="email" />
+	<input type="submit" value="Submit" />
+	</form>
+
+	<p>En HTML5 existe otro tipo de atributo llamado <strong>type="url"</strong> que sirve para validar un url</p>
+
+	<form action="http://www.example.org/profile.php">
+	<p>Please enter your website address:</p>
+	<input type="url" name="website" />
+	<input type="submit" value="Submit" />
+	</form>
+
+	<p>En HTML5 existe otro tipo de atributo llamado <strong>type="search"</strong> junto con un atributo llamado <strong>placeholder</strong>, el cual corresponde a un texto transparente que normalmente indica que poner en un bloque de texto.</p>
+
+	<p>Si quieres hacer un simple text box para realizar alguna solicitud de busqueda, HTML5 ya te provee una opcion especial para eso (search). De que sirve usar especialmente este atributo? bueno algunos browsers como safari limpian el search cuando uno va a escribir o entrega informacion entre otras cosas</p>
+
+	<form action="http://www.example.org/search.php">
+	<p>Search (sin placeholder):</p>
+	<input type="search" name="search" />
+	<input type="submit" value="Search" />
+	</form>
+
+	<form action="http://www.example.org/search.php">
+	<p>Search (con placeholder):</p>
+	<input type="search" name="search"
+	placeholder="Enter keyword" />
+	<input type="submit" value="Search" />
+	</form>
+
+	<p><b><ins>Resumen:</ins></b><br/>
+	-Una vez que uno quiere recolectar informacion desde un website, necesitas crear un elemento de forma, el cual vive dentro del elemento <strong>(form)</strong>.<br/>
+	-La informacion de un elemento de forma de un <strong>form</strong>, en enviado en <strong>names/values</strong><br/>
+	-Cada forma de control o elemento de forma se le asigna un <strong>name</strong>, y el espacio o texto el cual el usuario utiliza para enviar datos al servidor, o alguna opcion para seleccionar. <br/>
+	-HTML5 introduce  nuevos elementos de forma los cuales hacen mas facil a los visitantes llenar las formas. <br/>
+	</p>
+
+    </div>
+
+    <hr />
+
+    <div>
+    	
+    <h2 id="extra"><b><ins>Extra Markup</ins></b></h2>
+
+    <p>DOCTYPES, esto se coloca al inicio del codigo de html, se debe a que hay muchas versiones de html, por lo tanto el browser para identificar que version de html se quiere ocupar. Aqui van ejemplos de DOCTYPES:</p>
+
+    <img src="imagenes/doctype.png" alt="doctypes" title="doctypes">
+
+    <p>ID todo elemento puede tener una id, esto diferencia al elemento de cualquier otro, sin importar que ambos elementos sean iguales, por ejemplo (p id="parrafo")(/p) de (p)(/p), estos 2 elementos son diferentes, por lo general es utilizado para darle un estilo propio al utilizar CSS o JavaScript.</p>
+
+    <p>El atributo <strong>class</strong> cuando quieres identificar varios elementos que son mas importantes que otros, se utiliza este atributo, por ejemplo tienes algunos parrafos (p) de texto que contienen informacion importante, por lo tanto vas a queres distinguirlo de los demas. (Por lo general se utiliza algo de CSS para darle una caracteristica unica.</p>
+
+	<p>En HTML existen los elementos de bloque y los elementos de linea. Los elementos de bloque son todos aquellos elementos que encapsulan lineas completas, por ejemplo ul,p,h1,etc. En cambio los elementos de linea son aquellos elementos que encapsulan texto dentro de las lineas, por ejemplo: a,b,em,img,etc</p>  
+	
+	<p>Existe un elemento importante en HTML que se llama <strong>div-/div</strong>, el cual ayuda a encapsular en bloque un set de elementos. Se utiliza principalmente para estilizar con CSS y de ordenar</p>
+
+	<p>Hay otro elemento parecido al <strong>div</strong> que se llama <strong>span</strong>, el cual funciona igual que el <strong>div</strong> pero como un elemento de linea. La razon principar de usar <strong>span</strong> en un codigo, es que se quiera controlar la apariencia de un texto en especifico.</p>
+
+	<p>Otro elemento importante en html es <strong>iframe-/iframe</strong>, que es una pequena ventana que a sido cortada de la tuya para mostrar otra pagina web, por ejemplo un mapa de googlemaps. iframe contiene ciertos atributos que ya se vio con atenrioridad como <strong>src, width y height</strong>, un ejemplo: </p>
+
+	<iframe width="450" height="350" src="https://www.fayerwayer.com/" scrolling="yes" frameborder="0"><p>El browser no soporta iframes</p></iframe>
+
+	<p>Hay otros atributos dentro de <strong>iframe</strong> como <strong>scrolling "yes" o "no"</strong> que permite tener mas movimiento sobre la pagina, <strong>frameborder "(0)disable" "(1)enable"</strong> que permite colocarle un borde al iframe y por ultimo esta <strong>seamless</strong>, que es aplicado en iframes donde el scrollbar esta activado</p>
+
+	<p>El elemento <strong>(meta) vacio</strong>, vive dentro de el tag <strong>head</strong> y contiene informacion sobre la pagina web. No es visible para el usuario pero tiene un numero de propositos como decir a los motores de busqueda, acerca de la pagina, quien la creo y si tiene un tiempo de vida. El atributo de <strong>name</strong> que sele asigna al <strong>meta</strong> se encarga de indicar la intencion que va a tener la descripcion especificada. El atributo <strong>content</strong>, es donde la especificacion es descrita.</p>
+
+	<p>Los diferentes valores que toma comunmente el atributo <strong>name</strong> en el <strong>meta</strong> por lo general son:</p>
+
+	<dl>
+		<dt>description</dt>
+		<dd>Contiene la descripcion de la pagina. Esta descripcion es comunmente usada por los motores de busqueda para entender que tipo de pagina y debe tener un maximo de 155 caracteres.</dd>
+		<dt>keywords</dt>
+		<dd>Contiene separados por coma las palabas que el usuario podria buscar al encontrarlas en la pagina</dd>
+		<dt>robots</dt>
+		<dd>Esto indica si el motor de busqueda deberia de anadir esta pagina a sus resultados de busqueda o no. Un valor de nofollow puede ser usado si el motor de busqueda deberia anadir  esta pagina en sus resultados pero no cualquier pagina que la enlaza a ella. </dd>
+	</dl>
+
+	<p>El elemento <strong>meta</strong>, tambien usa el atributo <strong>http-equiv</strong> y el atributo <strong>content</strong> simultaneamente. <strong>http-equiv</strong>, puede ser <strong>author</strong> que define al autor de la pagina, ejemplo: <strong>(meta http-equiv="author"
+content="Jon Duckett" />)</strong>, <strong>pragma</strong> que evita que el browser almacene la pagina (consiste en almacenar cache localmente para ahorrar tiempo cuando se vuelva a antrar) ejemplo : <strong>(meta http-equiv="pragma"
+content="no-cache" />)</strong> y <strong>expires</strong> que debido a que los browsers amenudo almacenan el contenido de la pagina, la opcion <strong>expires</strong> puede ser usada para indicar cuando la pagina deberia de expirar y avisano al browser cuando deberia de dejar de almacenar cache de la pagina y debe ser especificado de esta manera (meta http-equiv="expires"
+content="Fri, 04 Apr 2014 23:59:59 GMT" />)</p>
+	
+	<p><img src="imagenes/scapecharacter.png" align="left"> Less-than sign
+	&lt;
+	&#60;<br/>
+	Greater-than sign
+	&gt;
+	&amp;<br/>
+	Ampersand
+	&amp;
+	&#38;<br/>
+	Quotation mark
+	&quot;
+	&#34;<br/>
+	Cent sign
+	&cent;
+	&#162;<br/>
+	Pound sign
+	&pound;
+	&#163;<br/>
+	Yen sign
+	&yen;
+	&#165;<br/>
+	Euro sign
+	&euro;
+	&#8364;<br/>
+	Copyright symbol
+	&copy;
+	&#169;<br/>
+	Registered trademark
+	&reg;
+	&#174;<br/>
+	Trademark
+	&trade;
+	&#8482;<br/>
+	Left single quote
+	&lsquo;
+	&#8216;<br/>
+	Right single quote
+	&rsquo;
+	&#8217;<br/>
+	Left double quotes
+	&ldquo;
+	&#8220;<br/>
+	Right double quotes
+	&rdquo;
+	&#8221;<br/>
+	Multiplication sign
+	&times;
+	&#215;<br/>
+	Division sign
+	&divide;
+	&#247;
+	</p>
+
+    </div>
+
+    <hr />
+
+    <div>
+    	
+    	<h1 id="flash"><strong><ins>Flash, video y audio</ins></strong></h1>
+
+    	<p>El camino mas popular para anadir un video flash en la pagina web es usando javaScript, hay muchos codigos dispuesto a hacer esto sin necesidad de saber de manera mas profunda como funciona el codigo. El script que se esta buscando se llama SWFObjetc, del cual se pude obtener una copia gratis de google la cual puede ser usada libremente.</p>
+
+    	<p>La tecnica consiste en utilizar <strong>div</strong> para crear un espacio donde el flash video  deberia de ubicarse. El div tiene una id del cual su valor es usado por SWFObject script para desplegar el video en el <strong>div</strong>, en este caso la id del div es <strong>id="bird"</strong> y este es el script en el head: <strong>swfobject.embedSWF("flash/bird.swf","bird", "400", "300", "8.0.0");</strong> . Dentro del div puedes poner un comentario para aquellos que no pueden reproducir videos flash. (recordar que el script va en el head)</p>
+
+    	<p><div id="bird" align="left"><p>An animation of a bird taking a shower</p></div>
+    	En este ejemplo el SWFObject esta siendo hosteado por <q>Google</q>. Incluimos el script en esta pagina usando el elemento <strong>script</strong>.<br/><br/>
+    	Se utiliza el elemento <strong>script</strong> para indicar que lo escrito dentro de el es javaScript. <strong>src</strong> en este caso es utilizado para ubicar la fuente del <strong>script</strong> utilizado, por ejemplo <strong>src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"</strong>.
+
+    	Se utilizaron 2 elementos <strong>script</strong> para cargar el flash, el primero fue utilizado para buscar el script y incluirlo en la pagina <strong>script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js">/script></strong>. El segundo <strong>script</strong> fue usado para decirle al browser sobre el flash video, y porque tipo de elemento debe ser reemplazado. Este elemento le dice al script SWFObject <strong>5</strong> parametros que necesita este script ejemplo:<br/><br/> <strong>&lt;script type="text/javascript">swfobject.embedSWF("flash/bird.swf","bird", "400", "300", "8.0.0");&lt;/script></strong>.
+    	</p>
+
+    	<ol>
+    		<li>Localizacion del archivo</li>
+    		<li>La id del elemento por el cual va a ser reemplazado por el video flash (bird en el div)</li>
+    		<li>El ancho(width) del video</li>
+    		<li>El alto(height) del video</li>
+    		<li>La version del flash requerido para reproducir el video</li>
+    	</ol>
+
+    	<h3><strong>Preparando un video flash para la pagina web</strong></h3>
+
+    	<p><b>1)</b> Convertir el formato del video a FLV</p>
+    	<p>Para reproducir un video flash hay que convertir el formato del video a FLV. Algunos flash video players tambien soportan un formato llamado H264. <br><br>
+    	Googleando <Q>FLV o H264 convertidores</Q> te permitiran encontrar alternativas de softwares disponibles. 
+    	</p>
+
+    	<p><b>2)</b> Encuentra un FLV player para reproducir el video</p>
+    	<p>Necesitaras un player written en el flash para reproducir un video FLV con el proposito de mantener el anadir peliculas FLV y mas control como play/pause. Aqui hay 2 sitios que ofrecen FLV players : www.osflv.com y www.longtailvideo.com : No necesitas una autorizacion de flash para utilizar alguno de estos en tu sitio.</p>
+
+    	<p><b>3)</b> Incluir el player y videos en tu pagina</p>
+    	<p>Puedes incluir un player en tu pagina usando tecnicas de javaScript como SWFObject, el cual se vio con anterioridad. Vas a tener que decirle al player donde puede encontrar el video que tu quieres reproducir.</p>
+
+    	<div id="snow"><p>A video of a puppy playing in the snow</p></div>
+
+
+    	<p>A pesar de que HTML5 &lt;video&gt; a sido recientemente anadido, tiene grandes capacidades de uso:</p>
+    	<dl>
+    		<dt>Soporte</dt>
+    		<dd>Este nuevo elemento de HTML5 solo tiene soporte por los nuevos browsers, asi que no se puede usar esta tecnica si se quiere mostrar el video a todo usuario</dd>
+    		<dt>Digital rights</dt>
+    		<dd>Igual que la escritura del elemento <strong>video</strong> no tiene soporte por muchos tipos de Digital rights management (Manejo de derechos digitales). Pero un pirata dedicado usualmente encontrara  una manera de rodear el DRM</dd>
+    		<dt>Formatos</dt>
+    		<dd>No todos los browsers soportan todos los formatos de video. Por eso necesitas proveer tu video en diferentes formatos. Para alcanzar la mayoria de browsers deberias de subir el video en los siguientes formatos: <strong>H264:</strong> IE and Safari <strong>SWebM:</strong> Android, Chrome,Firefox, Opera</dd>
+    		<dt>Controles</dt>
+    		<dd>Los browsers proveen su propio control para los reproductores, y esto puede variar segun el browser. Tu puedes controlar las apriencias de esos controles usando javaScript</dd>
+    		<dt>En el navegador</dt>
+    		<dd>Uno de los problemas con los reproductores tales como flashplayer  es que ellos pueden comportarce de manera inconsistente cuando elementos como menus se despliegan, o la ventana es escalada de arriba a abajo. Las opciones de HTML5 arreglan este problema. </dd>
+    	</dl>
+
+    	<h2><strong>HTML5: Anadiendo videos a tu pagina</strong></h2>
+
+    	<p>&lt;video&gt; tiene un numero de atributos que permite el control de video (playback). Como ya vimos <strong>video</strong> al igual que otros elementos tiene un elementro llamado <strong>src</strong>, el cual recibe la ubicacion del video.</p>
+    	 <p>El atributo <strong>poster</strong> permite colocar una imagen de portada al video antes de la reproduccion.</p>
+    	 <p>Tambien tiene los atributos <strong>width y height</strong>.</p>
+    	 <p>El atributo <strong>preload</strong> le dice al browser que hacer cuando la pagina carga, este puede tener 1 de 3 valores:</p>
+    	 <p><strong>none</strong> que le dice al browser que no debe de cargar el video hasta que el usuario aprete <q>play</q>.<br/> <strong>auto</strong> que le dice al browser que debe de descargar el video cuando la pagina carga. <br/> <strong>metadata</strong> el browser deberia de recolectar informacion como el tamano, first frame, la lista de videos (track list)  y duracion.</p>
+    	 <p>El atributo <strong>controls</strong> cuando es usada la ventana, este atributo indica que el browser deberia de aportar su propio control de playback</p>
+    	 <p>El atributo <strong>autoplay</strong> cuando es usada la ventana, este atributo especifica que el archivo deberia de reproducirce automaticamente</p>
+    	 <p>el atributo <strong>loop</strong> cuando es usada la ventana, este atributo indica que el video deberia de empezar a reproducirce  una vez alla terminado</p>
+
+    	<video poster="images/puppy.jpg" width="400" height="320" preload controls loop>
+		<source src="video/puppy.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+		<source src="video/puppy.webm" type='video/webm;codecs="vp8, vorbis"' />
+		<p>A video of a puppy playing in the snow</p>
+		</video>
+
+		<p>Multiple video source. Dentro del elemento <strong>video</strong>, existe otro elemento llamado <strong>source</strong>, utilizado para especificar la localizacion del archivo a reproducir, este deberia de reemplazar el atributo <strong>src</strong> de <strong>video</strong>. Puedes usar multiples <strong>source</strong> para especificar que el video esta disponible en varios formatos.(debido a bugs de ipad el formato mp4 deberia de ser el primero en mostrase, de otra manera no se reproduciria.</p>
+
+		<p>Dentro de <strong>source</strong> hay atributos como <strong>src</strong> para la ubicacion del archivo, <strong>type</strong> para decirle al browser que formato de video es. De otra manera este se descargaria algo del video para ver si puede reproducirlo (lo que tomaria tiempo y banda ancha)
+		ejemplo: <strong>type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'</strong></p>
+		<p>Existe otro atributo llamado <strong>codecs</strong> es utilizado para codificar el video y este va incluido dentro de <strong>type</strong> entre comillas simples ejemplo :<strong>type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'</strong>. Si el browser no soporta el elementro <strong>video</strong>, Este mostrara cualquier cosa que este entre la entrade y salida de <strong>video</strong>.</p>
+
+		<video poster="images/puppy.jpg" width="400" height="320" preload controls loop>
+			<source src="video/puppy.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+			<source src="video/puppy.webm" type='video/webm;codecs="vp8, vorbis"' />
+			<p>A video of a puppy playing in the snow</p>
+		</video>
+
+		<h2><strong>Combinando Flash y HTML5 videos</strong></h2>
+
+		<h3><strong>Anadiendo audio a la pagina web</strong></h3>
+
+		<dl>
+			<dt>Usar un servicio de host</dt>
+			<dd>Hay muchos sitios que permiten subir audios, y proveen un reproductor el cual tu puedes colocar en tu pagina, tales como soundCloud.com y myspace.com</dd>
+			<dt>Usar flash</dt>
+			<dd>Hay muchos tipos de flash movies que permiten reproducir archivos mp3 a traves de simples botones que reproducen los sonidos para los usuario que pueden crear playlist, etc</dd>
+			<dt>Usar html5</dt>
+			<dd>HTML5 ha introducido nuevos elementos como el elemento <strong>&lt;audio&gt;</strong>. Los browsers que soportan este elemento provee sus propios controles.(cuando se habla de controles se refiere a el boton de play y todo lo que va junto con el)</dd>
+		</dl>
+
+		<h2>Anadiendo flash mp3 player</h2>
+
+		<div id="music-player"><p>You cannot hear this track because thisbrowser does not support our Flash musicplayer.</p></div>
+
+		<p>
+			&lt;head&gt;<br />
+			&lt;script type="text/javascript"&gt;<br />
+			var flashvars = {};<br />
+			var params = {mp3: "audio/test-audio.mp3"};<br />
+			swfobject.embedSWF("flash/player_mp3_1.0.0.swf","music-player", "200", "20", "8.0.0",flashvars, params);&lt;/script&gt;<br />
+			&lt;/head&gt;<br />
+			&lt;body&gt;<br />
+			&lt;div id="music-player"&gt;&lt;p&gt;You cannot hear this track because thisbrowser does not support our Flash musicplayer.&lt;/p&gt;&lt;/div&gt;<br />
+			&lt;/body&gt;
+		</p>
+		
+		<p>Para anadir un audio al igual que el elementro <strong>video</strong> hay que usar el elemento <strong>audio</strong>. Audio tiene una gran variedad de atributos al igual que video como:</p>
+
+		<p><strong>src</strong> atributo que especifica la direccion del archivo</p>
+		<p><strong>controls</strong> atributo que indica si deberian de mostrarse el control player, si no se usa este atributo no se mostrara, Puedes tambien especificar tu propio control player con javascript</p>
+		<p><strong>autoplay</strong> la precencia de este atributo indica que el audio deberia de reproducirce automticamente.(Esto es considerado buena practica dejar al usuario elegir si reproducirlo o no)</p>
+		<p><strong>preload</strong> este atributo indica que el browser deberia hacer si la reproduccion no esta seteada como automatica. Este puede tener el mismo valor que se vio con anterioridad en el elemento video (none, auto y metadata)</p>
+		<p><strong>loop</strong> indica que el audio debe reproducirde una y otra vez cada vez que temine.</p>
+		<p>Entre el elemento <strong>audio</strong> existe un elemento llamado <strong>source</strong> que se encarga de especificar mas de un formato de reproduccion de audio, dejando el primer souce como el principal, en caso de no poder reproducirce ese , cambia al siguiente. Este elemento tiene atributos de <strong>type y src</strong>, al tener src significa que no hay que especificar src en <strong>audio</strong>, ejemplo: </p>
+
+		<p> 
+		&lt;audio controls preload="none" &gt;<br>
+		&lt;source src="audio/test-audio.ogg" / &gt;<br>
+		&lt;source src="audio/test-audio.mp3" / &gt;<br>
+		&lt;p &gt;This browser does not support our audio format.&lt;/p &gt;<br>
+		&lt;/audio &gt;<br>
+		</p>
+
+		<audio controls preload="auto">
+		<source src="audio/test-audio.ogg" />
+		<source src="audio/test-audio.mp3" />
+		<p>This browser does not support our audio format.</p>
+		</audio>
+
+		<p>Formatos de audio soportado segun browser <br>
+		MP3: Safari 5+, Chrome 6+, IE9<br>
+		Ogg Vorbis: Firefox 3.6, Chome6, Opera 1.5, IE9</p>
+
+    </div>
+
+    <hr />
+
+    <h2><strong><ins>Fin de HTML</ins></strong></h2>
+
+   </div>
+
+</body>
+<footer>
+	<p align="right">&copy; By <a href="mailto:earayad@hotmail.cl">th3lios</a></p>
+</footer>
+</html>
